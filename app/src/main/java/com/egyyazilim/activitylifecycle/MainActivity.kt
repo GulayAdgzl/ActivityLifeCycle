@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        Log.i("MainActivity","onStart")
+        Log.i("MainActivity","onStart çağrıldı")
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
