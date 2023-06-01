@@ -3,6 +3,7 @@ package com.egyyazilim.activitylifecycle
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import com.egyyazilim.activitylifecycle.databinding.ActivityMainBinding
@@ -35,6 +36,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.paylas_menu,menu)
         return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.i("MainActivity","onStart")
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
