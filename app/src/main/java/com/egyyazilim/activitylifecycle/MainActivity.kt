@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import com.egyyazilim.activitylifecycle.databinding.ActivityMainBinding
+import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -40,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        Log.i("MainActivity","onStart çağrıldı")
+        Timber.i("MainActivity","onStart çağrıldı")
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
