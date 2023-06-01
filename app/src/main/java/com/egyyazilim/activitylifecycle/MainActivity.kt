@@ -43,6 +43,27 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         Timber.i("MainActivity","onStart çağrıldı")
     }
+    //onResume
+    override fun onResume() {
+        super.onResume()
+        Timber.i("MainActivity","onResume çağrıldı")
+    }
+    //onPause
+    override fun onPause() {
+        super.onPause()
+        Timber.i("MainActivity","onPause çağrıldı")
+    }
+    //onStop
+    override fun onStop() {
+        super.onStop()
+        Timber.i("MainActivity","onStop çağrıldı")
+    }
+    //onDestroy
+    override fun onDestroy() {
+        super.onDestroy()
+        Timber.i("MainActivity","onDestroy çağrıldı")
+    }
+
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
